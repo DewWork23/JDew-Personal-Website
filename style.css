@@ -460,6 +460,33 @@ body {
     border-radius: 12px;
 }
 
+/* Key Features Section */
+.key-features {
+    margin-top: 20px;
+}
+
+.key-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.key-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 12px;
+    font-size: 1.1em;
+    color: #2d3748;
+}
+
+.key-features i {
+    font-size: 1.2em;
+    color: #3498db;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
 /* Impact Grid */
 .impact-grid {
     display: grid;
