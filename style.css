@@ -137,12 +137,14 @@ body {
 .link-card h3 {
     color: #2d3748;
     margin-bottom: 10px;
+    font-size: 1.4em;
 }
 
 .link-card p {
     color: #718096;
     margin-bottom: 20px;
     font-size: 0.95em;
+    line-height: 1.4;
 }
 
 .card-link {
@@ -483,34 +485,6 @@ body {
     margin: 0;
 }
 
-/* Technical Details */
-.tech-stack {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.tech-item h4 {
-    color: #2d3748;
-    margin-bottom: 15px;
-}
-
-.tech-item ul {
-    list-style: none;
-    padding: 0;
-}
-
-.tech-item li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.tech-item i {
-    color: #3498db;
-}
-
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -527,3 +501,27 @@ body {
     from {
         opacity: 0;
         transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* General */
+    .main-content {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    /* Header */
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
