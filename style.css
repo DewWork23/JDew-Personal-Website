@@ -1,4 +1,6 @@
-/* Quick Links Section - Adding back icons and accent colors */
+/* [Previous styles remain the same up until the Quick Links Section] */
+
+/* Quick Links Section */
 .quick-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,38 +15,6 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    position: relative;
-}
-
-/* Add icons to link cards */
-.link-card:nth-child(1)::before {
-    content: '\f007'; /* User icon */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 2em;
-    color: #3498db;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.link-card:nth-child(2)::before {
-    content: '\f15c'; /* Document icon */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 2em;
-    color: #3498db;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.link-card:nth-child(3)::before {
-    content: '\f542'; /* Project diagram icon */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 2em;
-    color: #3498db;
-    margin-bottom: 15px;
-    display: block;
 }
 
 .link-card:hover {
@@ -52,50 +22,53 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.link-card h3 {
-    color: #2d3748;
-    margin-bottom: 10px;
-    font-size: 1.4em;
-}
-
-.link-card p {
-    color: #718096;
-    margin-bottom: 20px;
-    font-size: 0.95em;
-}
-
-.card-link {
-    display: inline-block;
-    padding: 8px 20px;
-    background: rgba(52, 152, 219, 0.1);
+.link-card i {
+    font-size: 2em;
     color: #3498db;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    display: block;
 }
 
-.card-link:hover {
-    background: #3498db;
-    color: white;
+/* Current Focus Section */
+.focus-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(248, 250, 252, 0.5);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
-/* Current Focus Section - Adding back accent colors */
-.focus-item:nth-child(1)::before {
-    content: '\f19d'; /* Graduation cap icon */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
+.focus-item i {
     font-size: 1.5em;
     color: #3498db;
-    margin-right: 15px;
+    flex-shrink: 0;
 }
 
-.focus-item:nth-child(2)::before {
-    content: '\f0c0'; /* Users icon */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 1.5em;
-    color: #3498db;
-    margin-right: 15px;
+/* Single Media Query Section */
+@media (max-width: 768px) {
+    /* Previous mobile styles remain the same */
+    
+    .link-card i {
+        font-size: 1.8em;
+        margin-bottom: 12px;
+    }
+    
+    .focus-item i {
+        font-size: 1.3em;
+    }
 }
 
-/* Add these styles to your existing CSS file, making sure not to remove any other styles */
+@media (max-width: 480px) {
+    /* Previous small screen styles remain the same */
+    
+    .link-card i {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+    
+    .focus-item i {
+        font-size: 1.2em;
+    }
+}
