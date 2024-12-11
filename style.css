@@ -675,6 +675,7 @@ margin: 20px auto;
 }
 
 /* About Page */
+/* About Page */
 .about-section {
     flex-direction: column;
     gap: 30px;
@@ -686,6 +687,9 @@ margin: 20px auto;
     max-width: 300px;
     height: auto;
     margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .about-section .profile-image {
@@ -696,23 +700,15 @@ margin: 20px auto;
 
 .about-text {
     padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* CV Page */
-.cv-container {
-    padding: 20px;
-}
-
-.cv-section h3 {
-    font-size: 1.5em;
-}
-
-.cv-item {
-    padding: 15px;
-}
-
-.cv-item h4 {
-    font-size: 1.2em;
+.contact-icons {
+    justify-content: center;
+    margin-top: 20px;
 }
 
 /* Project Page */
